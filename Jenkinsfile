@@ -2,7 +2,6 @@ pipeline {
   agent {
     dockerfile {
         filename 'dockerfile'
-        label 'compile'
         args '-rm -it -v $PWD:/home/root/workspace'
     }
   }
