@@ -1,14 +1,13 @@
 pipeline {
   agent {
-    dockerfile {
-        filename 'dockerfile'
-        args '-it -v $PWD:/home/root/workspace'
-    }
+	any
   }
   stages {
     stage('Initialize') {
       steps {
-        sh 'ls /home/root/workspace'
+        sh 'mkdir build'
+	sh 'cmake -S . -B build'
+	sh 'ls build'
       }
     }
 
