@@ -27,7 +27,8 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Test'
-        sh './Devops_example_tests -r junit >test_results.xml'
+        sh './Devops_example_tests -r junit > test_results.xml'
+	sh 'ls'
       }
     }
 
