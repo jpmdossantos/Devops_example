@@ -1,11 +1,11 @@
 pipeline {
-  agent	any
+  agent any
   stages {
     stage('Initialize') {
       steps {
         sh 'mkdir build'
-	sh 'cmake -S . -B build'
-	sh 'ls build'
+        sh 'ls .'
+        sh 'echo $PWD'
       }
     }
 
