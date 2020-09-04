@@ -19,7 +19,8 @@ pipeline {
       steps {
         echo 'Build'
         sh 'cmake -S . -B build'
-        sh 'ls'
+        sh 'cd build'
+        sh 'make'
       }
     }
 
