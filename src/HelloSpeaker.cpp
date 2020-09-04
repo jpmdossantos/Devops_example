@@ -12,7 +12,7 @@ HelloSpeaker::HelloSpeaker(std::string phrase = "Henlo") {
 }
 
 HelloSpeaker::HelloSpeaker() {
-	this->phrase = "Henlo";
+	this->phrase = "Henlow";
 }
 
 std::string HelloSpeaker::greet() {
