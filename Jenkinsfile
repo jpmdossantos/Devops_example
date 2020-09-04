@@ -20,7 +20,7 @@ pipeline {
         echo 'Build'
         sh 'cmake -S . -B build'
         dir(path: 'build')
-        sh 'make'
+        sh 'ls'
       }
     }
 
