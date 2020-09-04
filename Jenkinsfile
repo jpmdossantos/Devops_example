@@ -2,7 +2,7 @@ pipeline {
   agent {
     dockerfile {
         filename 'dockerfile'
-        args '-rm -it -v $PWD:/home/root/workspace'
+        args '-it -v $PWD:/home/root/workspace'
     }
   }
   stages {
