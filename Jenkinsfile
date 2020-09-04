@@ -18,8 +18,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build'
-        sh 'cmake -S . -B build'
-        sh 'cd build'
+        sh 'cmake .'
+        sh 'ls'
         sh 'make'
       }
     }
