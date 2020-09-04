@@ -1,11 +1,10 @@
 pipeline {
   agent {
     dockerfile {
-      filename 'dockerfile'
-      label 'compiler:latest'
-      args '-it --rm   -v $PWD:/home/root/workspace compiler:latest'
+        filename 'dockerfile'
+        label 'compile'
+        args '-rm -it -v $PWD:/home/root/workspace'
     }
-
   }
   stages {
     stage('Initialize') {
