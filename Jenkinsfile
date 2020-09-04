@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        echo 'Initialized'
+        sh 'ls /home/root/workspace'
       }
     }
 
