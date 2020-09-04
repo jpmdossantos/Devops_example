@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+   agent {
+    dockerfile {
+        filename 'dockerfile'
+        args '-it -v $PWD:/home/root/workspace'
+    }
+    }
+
   stages {
     stage('Initialize') {
       steps {
