@@ -26,7 +26,8 @@ pipeline {
 
     stage('Test') {
       steps {
-        echo '?'
+        echo 'Test'
+        sh './Devops_example_tests -r junit'
       }
     }
 
