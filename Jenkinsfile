@@ -19,7 +19,6 @@ pipeline {
       steps {
         echo 'Build'
         sh 'cmake -S . -B build'
-        dir(path: 'build')
         sh 'ls'
       }
     }
