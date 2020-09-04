@@ -2,6 +2,8 @@ pipeline {
   agent {
     dockerfile {
       filename 'dockerfile'
+      label 'compiler:latest'
+      args '-it --rm   -v $PWD:/home/root/workspace compiler:latest'
     }
 
   }
