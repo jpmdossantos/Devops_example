@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Initialize') {
       steps {
-        sh 'cmake /home/root/workspace'
+        sh 'echo $SOURCES'
       }
     }
 
